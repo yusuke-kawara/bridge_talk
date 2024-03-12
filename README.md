@@ -52,4 +52,4 @@ Figma：https://www.figma.com/file/Ski6blBaXHTZFADVOjXxSo/%E7%84%A1%E9%A1%8C?typ
 管理者のみがユーザー登録、削除をできる仕様にするため一般のユーザーがメールアドレス、パスワードを変更できるページは作成しません
 
 ### ER図
-Gyazo : https://gyazo.com/430fcbacd0f41681294ed892971c6797
+Gyazo : https://gyazo.com/799c638de0f09646b644f21c6ecb1298
