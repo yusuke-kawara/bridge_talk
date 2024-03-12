@@ -1,6 +1,7 @@
 require "active_support/core_ext/integer/time"
 
 Rails.application.configure do
+  config.action_mailer.default_url_options = { host: 'bridge-talk.onrender.com', protocol: 'https' }
   # Settings specified here will take precedence over those in config/application.rb.
   config.hosts << "bridge-talk.onrender.com"
   config.hosts << "bridge_talk.onrender.com"
