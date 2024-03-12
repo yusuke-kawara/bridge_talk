@@ -73,3 +73,10 @@ group :test do
   gem "selenium-webdriver"
 
 end
+
+gem 'devise'
+gem 'ransack'
+gem 'rails_admin'
+gem 'cancancan'
+gem "sassc-rails"
+gem 'importmap-rails'
