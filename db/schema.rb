@@ -39,3 +39,4 @@ ActiveRecord::Schema[7.0].define(version: 2024_03_12_195458) do
 
   add_foreign_key "posts", "users"
 end
+references

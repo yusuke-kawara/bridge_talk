@@ -1,6 +1,6 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Posts</h1>
+<h1>連絡事項一覧</h1>
 
 <div id="posts">
   <% @posts.each do |post| %>
@@ -8,7 +8,12 @@
     <p>
       <%= link_to "Show this post", post %>
     </p>
+    <hr style="border: none; height: 1px; background-color: #ccc;"> <!-- 仮置き -->
   <% end %>
 </div>
 
 <%= link_to "New post", new_post_path %>
+
+<%= form_with url: destroy_user_session_path, method: :delete do |form| %>
+  <%= form.submit "Logout" %>
+<% end %>
