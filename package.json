@@ -1,10 +1,18 @@
 {
   "name": "app",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@hotwired/stimulus": "^3.2.2",
     "@hotwired/turbo-rails": "^8.0.3",
     "esbuild": "^0.20.1",
     "sass": "^1.71.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "rollup": "^4.13.0"
+  },
+  "scripts": {
+    "build": "rollup -c"
   }
 }
