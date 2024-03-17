@@ -36,8 +36,5 @@
 
 /node_modules
 
-# データベース設定ファイル
-/config/database.yml
-
 # パッケージファイル
 /vendor/bundle
