@@ -38,3 +38,4 @@
 
 # パッケージファイル
 /vendor/bundle
+/config/credentials/development.key
