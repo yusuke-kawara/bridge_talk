@@ -5,7 +5,7 @@
 <% if Rails.application.credentials.dig(:external_url, :hidden_link) %>
   <%= link_to 'クレデンシャルテスト', '/secret-link' %>
 <% else %>
-  <P>エラーが発生しています</p>
+  <P>表示することができない状態です</p>
 <% end %>
 
 <%= render 'search_form', q: @q, url: posts_path %>
