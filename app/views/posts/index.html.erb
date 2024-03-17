@@ -2,6 +2,12 @@
 
 <h1>連絡事項一覧</h1>
 
+<% if Rails.application.credentials.dig(:external_url, :hidden_link) %>
+  <%= link_to 'クレデンシャルテスト', Rails.application.credentials.external_url[:hidden_link] %>
+<% else %>
+  <P>エラーが発生しています</p>
+<% end %>
+
 <%= render 'search_form', q: @q, url: posts_path %>
 
 <div id="posts">
