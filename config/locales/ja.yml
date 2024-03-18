@@ -1,4 +1,9 @@
 ja:
+  helpers:
+    submit:
+      post:
+        create: "投稿する"
+        update: "更新する"
   search_form:
     search: "検索"
     title_and_content_search: "タイトルと本文で検索"
@@ -12,8 +17,10 @@ ja:
         post:
           attributes:
             title:
+              too_long: "長すぎます。最大%{count}文字までです"
               blank: "タイトルを入力してください"
             content:
+              too_long: "長すぎます。最大%{count}文字までです"
               blank: "本文を入力してください"
     models:
       post: "投稿"
@@ -22,6 +29,8 @@ ja:
         title: "タイトル:"
         content: "本文:"
   posts:
+    new:
+      back_to_posts: "投稿一覧へ戻る"
     show:
       edit: "編集"
       destroy: "削除"
