@@ -6,10 +6,10 @@
 
 <div>
   <% if user_signed_in? && current_user.id == @post.user_id %>
-    <%= link_to 'Edit', edit_post_path(@post) %> |
-    <%= link_to 'Destroy', @post, method: :delete, data: { confirm: 'Are you sure?' } %>
+    <%= link_to t('posts.show.edit'), edit_post_path(@post) %> |
+    <%= link_to t('posts.show.destroy'), @post, method: :delete, data: { confirm: t('posts.show.confirm') } %>
     <br>
   <% end %>
   
-  <%= link_to "Back to posts", posts_path %>
+  <%= link_to t('posts.show.back_to_posts'), posts_path %>
 </div>

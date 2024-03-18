@@ -3,7 +3,7 @@
 <h1>連絡事項一覧</h1>
 
 <% if Rails.application.credentials.dig(:external_url, :hidden_link) %>
-  <%= link_to 'クレデンシャルテスト', '/secret-link' %>
+  <%= link_to '配車表', '/secret-link' %>
 <% else %>
   <P>表示することができない状態です</p>
 <% end %>
@@ -14,14 +14,14 @@
   <% @posts.each do |post| %>
     <%= render post %>
     <p>
-      <%= link_to "Show this post", post %>
+      <%= link_to t('links.view_post'), post %>
     </p>
     <hr style="border: none; height: 1px; background-color: #ccc;"> <!-- 仮置き -->
   <% end %>
 </div>
 
-<%= link_to "New post", new_post_path %>
+<%= link_to t('links.new_post'), new_post_path %>
 
 <%= form_with url: destroy_user_session_path, method: :delete do |form| %>
-  <%= form.submit "Logout" %>
+  <%= form.submit t('posts.logout') %>
 <% end %>

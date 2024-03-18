@@ -1,0 +1,49 @@
+ja:
+  helpers:
+    submit:
+      post:
+        create: "投稿する"
+        update: "更新する"
+  search_form:
+    search: "検索"
+    title_and_content_search: "タイトルと本文で検索"
+    user_search: "投稿者で検索"
+  links:
+    view_post: "投稿の詳細"
+    new_post: "投稿の作成"
+  activerecord:
+    errors:
+      models:
+        post:
+          attributes:
+            title:
+              too_long: "長すぎます。最大%{count}文字までです"
+              blank: "タイトルを入力してください"
+            content:
+              too_long: "長すぎます。最大%{count}文字までです"
+              blank: "本文を入力してください"
+    models:
+      post: "投稿"
+    attributes:
+      post:
+        title: "タイトル:"
+        content: "本文:"
+  posts:
+    new:
+      back_to_posts: "投稿一覧へ戻る"
+    show:
+      edit: "編集"
+      destroy: "削除"
+      confirm: "本当に削除してよろしいですか？"
+      back_to_posts: "一覧へ戻る"
+    title: "タイトル:"
+    content: "本文:"
+    user: "投稿者"
+    logout: "ログアウト"
+    create:
+      notice: "投稿が正常に作成されました"
+    update:
+      notice: "投稿が正常に更新されました"
+    destroy:
+      notice: "投稿が正常に削除されました"
+      failure: "投稿の削除に失敗しました"

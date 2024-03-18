@@ -79,3 +79,4 @@ gem 'ransack'
 gem 'rails_admin'
 gem 'cancancan'
 gem "sassc-rails"
+gem 'i18n'
